@@ -1,4 +1,4 @@
-package hello.advanced2.app.trace;
+package hello.advanced2.trace;
 
 public class TraceStatus {
 
