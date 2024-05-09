@@ -12,7 +12,7 @@ public class TraceId {
         this.level = 0;
     }
 
-    private TraceId(String id, int leveL) {
+    private TraceId(String id, int level) {
         this.id = id;
         this.level = level;
     }
@@ -29,7 +29,7 @@ public class TraceId {
         return new TraceId(id, level - 1);
     }
 
-    public boolean ifFirstLevel() {
+    public boolean isFirstLevel() {
         return level == 0;
     }
 
