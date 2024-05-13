@@ -25,8 +25,6 @@ public class HelloTraceV2 {
         //TraceId traceId = new TraceId();
         TraceId nextId = beforeTraceId.createNextId();
         Long startTimeMs = System.currentTimeMillis();
-        System.out.println("beforeTraceId.getLevel():::"+beforeTraceId.getLevel());
-        System.out.println("nextId.getLevel():::"+nextId.getLevel());
         log.info("[{}] {}{}", nextId.getId(), addSpace(START_PREFIX, nextId.getLevel()), message);
         return new TraceStatus(nextId, startTimeMs, message);
     }

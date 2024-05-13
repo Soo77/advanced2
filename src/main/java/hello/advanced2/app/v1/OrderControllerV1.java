@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RequiredArgsConstructor
 public class OrderControllerV1 {
 
-    private final OrderServiceV1 orderServiceV0;
+    private final OrderServiceV1 orderService;
     private final HelloTraceV1 trace;
 
     @GetMapping("/v1/request")
@@ -21,7 +21,7 @@ public class OrderControllerV1 {
         try {
 
             status = trace.begin("OrderController.request()");
-            orderServiceV0.orderItem(itemId);
+            orderService.orderItem(itemId);
             trace.end(status);
             return "ok";
 
