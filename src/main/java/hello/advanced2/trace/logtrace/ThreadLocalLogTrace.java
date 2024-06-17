@@ -50,7 +50,7 @@ public class ThreadLocalLogTrace implements LogTrace {
 
     private void syncTraceId() {
         TraceId traceId = traceIdHolder.get();
-        if(traceId == null) {
+        if(traceId == null) { // traceIdHolder -> traceId 오타 수정
             traceIdHolder.set(new TraceId());
         } else {
             traceIdHolder.set(traceId.createNextId());
