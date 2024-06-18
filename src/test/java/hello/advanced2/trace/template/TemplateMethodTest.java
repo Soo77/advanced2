@@ -1,8 +1,8 @@
-package hello.advanced2.template;
+package hello.advanced2.trace.template;
 
-import hello.advanced2.template.code.AbstractTemplate;
-import hello.advanced2.template.code.SubClassLogic1;
-import hello.advanced2.template.code.SubClassLogic2;
+import hello.advanced2.trace.template.code.AbstractTemplate;
+import hello.advanced2.trace.template.code.SubClassLogic1;
+import hello.advanced2.trace.template.code.SubClassLogic2;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.jupiter.api.Test;
 

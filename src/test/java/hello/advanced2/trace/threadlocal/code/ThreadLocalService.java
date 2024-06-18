@@ -1,4 +1,4 @@
-package hello.advanced2.threadlocal.code;
+package hello.advanced2.trace.threadlocal.code;
 
 import lombok.extern.slf4j.Slf4j;
 
